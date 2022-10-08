@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class QuizzComponent implements OnInit {
 
   constructor() { }
+  TituloPergunta:String = 'Titulo da pergunta';
+  QuestaoSelecionada:String = 'Questao selecionada';
 
   ngOnInit(): void {
   }
