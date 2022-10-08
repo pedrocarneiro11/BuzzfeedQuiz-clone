@@ -9,7 +9,17 @@ export class QuizzComponent implements OnInit {
 
   constructor() { }
   TituloPergunta:String = 'Titulo da pergunta';
-  QuestaoSelecionada:String = 'Questao selecionada';
+
+  Questao:any;
+  QuestaoSelecionada:any = 'Questao selecionada';
+
+  answers:string[] = [];
+  answerSelected:string ="";
+
+  questionIndex:number = 0;
+  questionMaxIndex:number = 0;
+
+  finished:boolean = false;
 
   ngOnInit(): void {
   }
